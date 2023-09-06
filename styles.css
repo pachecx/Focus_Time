@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 196px 126px 188px 333px;
+}
+
+.box{
+    width: 821px;
+    height: 336px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 500px auto);
+    grid-template-rows: repeat(2, 150px 50px);
+}
+
+.time{
+    grid-row-start: 1;
+}
+
+.options{
+    grid-row-start: 2;
+}
+
+.time,
+.options{
+    margin: 50px auto auto 0;
+}
+
+.time span{
+    color: #323238;
+    text-align: center;
+    font-size: 126px;
+}
+
+.options{
+    display: flex;
+    gap: 40px;
+}
+
+.options button{
+    height: 45px;
+    border: none;
+    background: transparent;
+    border-radius: 50%;
+}
+
+.pause svg{
+    height: 55px;
+    width: 55px;
+}
+
+.cards{
+    width: 388px;
+    height: 336px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.cards button{
+    width: 138px;
+    height: 152px;
+    border-radius: 25px;
+    border: none;
+}
+
+.cards button:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.hide{
+    display: none;
+}
+
+.options button:focus{
+    background: #02799D;
+}
+
+.options button,
+.cards button{
+    cursor: pointer;
+}
+
